@@ -12,3 +12,29 @@ async function iegutApgerbiNoApi()
     let datiJson = await datiNoApi.json();
     return datiJson;
 }
+
+async function iegutDarbaLaiksNoApi()
+{
+    let datiNoApi = await fetch('https://armandspucs.github.io/veikals/darbalaiks.json')
+    let datiJson = await datiNoApi.json();
+    return datiJson;
+}
+
+
+async function raditDatus()
+{
+    let darglietasJson = await iegutDarglietasNoApi();
+    let apgerbiJson = await iegutApgerbiNoApi();
+
+    let produktiKopa = darglietasJson.concat(apgerbiJson);
+
+    
+
+    for (let i = 0; i < produktiKopa.length; i++)
+    {
+        console.log( produktiKopa[i]['title'] );
+    }
+    
+}
+
+raditDatus();
