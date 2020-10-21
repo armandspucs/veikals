@@ -1,0 +1,20 @@
+{
+    "vietas": [
+        {
+            "pilseta": "Rīga",
+            "darbalaiks": "08.00 - 19.00"
+        },
+        {
+            "pilseta": "Rēzekne",
+            "darbalaiks": "08.00 - 19.00"
+        },
+        {
+            "pilseta": "Rūjiena",
+            "darbalaiks": "08.00 - 18.00"
+        },
+        {
+            "pilseta": "Liepāja",
+            "darbalaiks": "08.00 - 19.00"
+        }
+    ]
+}
